@@ -215,3 +215,57 @@ section .img-send{
         object-fit: cover;
     }
 }
+
+.down{
+    transition: all 300ms ease-out;
+    transition-delay: 1ms;
+    cursor: pointer;
+}
+
+button{
+    transition: all 300ms ease-out;
+    transition-delay: 1ms;
+    cursor: pointer;
+}
+
+.card{
+    transition: all 300ms ease-out;
+    transition-delay: 1ms;
+    cursor: pointer;
+}
+
+#cards{
+    transition: all 300ms ease-out;
+    transition-delay: 1ms;
+}
+
+#cards:hover{
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+    transform: scale(1.1) rotate(0deg);
+}
+
+.card:hover{
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+    transform: scale(1.1) rotate(2deg);
+}
+
+button:hover{
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+    transform: scale(1.1) rotate(-0deg);
+}
+
+.down:hover{
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+    transform: scale(1.1) rotate(-0deg);
+}
+
+header {
+    --startY: -100%;
+    animation: move .6s;
+}
+
+@keyframes move{
+    from {
+        transform: translateY(var(--startY));
+    }
+}
